@@ -1,0 +1,109 @@
+import { Story, Canvas, ArgsTable } from '@storybook/addon-docs';
+
+import { ModalContent } from './modal-content';
+
+# ModalContent
+
+`ModalContent` is the container for the modal dialog's content
+
+<Canvas>
+  <Story id="components-componentlibrary-modalcontent--default-story" />
+</Canvas>
+
+## Props
+
+The `ModalContent` accepts all props below as well as all [Box](/docs/components-ui-box--default-story#props) component props
+
+<ArgsTable of={ModalContent} />
+
+### Children
+
+Use the `children` prop to render the content of `ModalContent`
+
+<Canvas>
+  <Story id="components-componentlibrary-modalcontent--children" />
+</Canvas>
+
+```jsx
+import { ModalContent, Text } from '../../component-library';
+
+<ModalContent>
+  <ModalHeader />
+  <Text>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio,
+    reiciendis assumenda dolorum mollitia saepe, optio at aliquam molestias
+    omnis quae corporis nesciunt natus, quas tempore ut ullam eaque fuga. Velit.
+  </Text>
+  <LoremIpsum />
+  <LoremIpsum />
+  <LoremIpsum />
+  <LoremIpsum />
+  <LoremIpsum />
+</ModalContent>;
+```
+
+### Size
+
+Currently the `ModalContent` supports a single size, this decision was made after we ran an audit on all modal sizes in the extension codebase and found that all modals could be made to fit the `ModalContentSize.Sm`(360px) size.
+
+If you do require a larger modal size you can use the `modalDialogProps` to add a className to override the default size.
+
+<Canvas>
+  <Story id="components-componentlibrary-modalcontent--size" />
+</Canvas>
+
+```jsx
+import { ModalContent, Text } from '../../component-library';
+
+<ModalContent>
+  <Text marginBottom={4}>
+    ModalContentSize.Sm default and only size 360px max-width
+  </Text>
+</ModalContent>
+
+<ModalContent {...args} modalDialogProps={{ style: { maxWidth: 800 } }}>
+  <Text marginBottom={4}>
+    Using modalDialogProps and adding a className setting a max width
+    (max-width: 800px)
+  </Text>
+</ModalContent>
+```
+
+### Modal Dialog Ref
+
+Use the `modalDialogRef` prop to pass a ref to the dialog element in the `ModalContent` component. This is primarily used with the `closeOnOutsideClick` prop on the `Modal` component. It allows the `Modal` to close when the user clicks outside of the `ModalContent` component.
+
+<Canvas>
+  <Story id="components-componentlibrary-modalcontent--modal-dialog-ref" />
+</Canvas>
+
+```jsx
+import React, { useEffect, useRef, useState } from 'react';
+import { ModalContent, Text } from '../../component-library';
+
+const [show, setShow] = useState(false);
+const modalDialogRef = useRef<HTMLDivElement>(null);
+
+const handleClickOutside = (event: MouseEvent) => {
+  if (
+    modalDialogRef?.current &&
+    !modalDialogRef.current.contains(event.target as Node)
+  ) {
+    setShow(false);
+  }
+};
+
+useEffect(() => {
+  document.addEventListener('mousedown', handleClickOutside);
+  return () => {
+    document.removeEventListener('mousedown', handleClickOutside);
+  };
+}, []);
+
+<Button onClick={() => setShow(true)}>Show ModalContent</Button>
+{show && (
+  <ModalContent>
+    Click outside of this ModalContent to close
+  </ModalContent>
+)}
+```
