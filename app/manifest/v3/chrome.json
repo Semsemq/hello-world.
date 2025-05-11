@@ -1,0 +1,25 @@
+{
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; frame-ancestors 'none';"
+  },
+  "externally_connectable": {
+    "matches": ["https://metamask.io/*"],
+    "ids": ["*"]
+  },
+  "minimum_chrome_version": "80",
+  "permissions": [
+    "scripting",
+    "storage",
+    "unlimitedStorage",
+    "clipboardWrite",
+    "http://localhost:8545/",
+    "https://*.infura.io/",
+    "https://*.codefi.network/",
+    "https://chainid.network/chains.json",
+    "https://lattice.gridplus.io/*",
+    "activeTab",
+    "webRequest",
+    "*://*.eth/",
+    "notifications"
+  ]
+}
