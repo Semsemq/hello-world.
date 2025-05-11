@@ -1,0 +1,7 @@
+.list-with-search {
+  .searchable-item-list {
+    &__list-container {
+      overflow-y: inherit;
+    }
+  }
+}
