@@ -1,0 +1,132 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Reveal Seed Page should match snapshot 1`] = `
+<div>
+  <div
+    class="box page-container box--flex-direction-row"
+  >
+    <div
+      class="box page-container__header box--flex-direction-row"
+    >
+      <h2
+        class="box box--margin-top-1 box--margin-bottom-1 box--flex-direction-row typography page-container__title typography--h2 typography--weight-normal typography--style-normal typography--color-text-default"
+      >
+        Secret Recovery Phrase
+      </h2>
+      <h6
+        class="box box--margin-top-1 box--margin-bottom-1 box--flex-direction-row typography page-container__subtitle typography--h6 typography--weight-400 typography--style-normal typography--color-text-default"
+      >
+        <span>
+           
+          The 
+          <a
+            class="button btn-link settings-page__inline-link"
+            href="https://metamask.zendesk.com/hc/en-us/articles/4404722782107-User-guide-Secret-Recovery-Phrase-password-and-private-keys"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            Secret Recovery Phase (SRP)
+          </a>
+           provides 
+          <b>
+            full access to your wallet and funds.
+          </b>
+          
+           
+        </span>
+      </h6>
+      <h6
+        class="box box--margin-top-1 box--margin-bottom-1 box--flex-direction-row typography page-container__subtitle typography--h6 typography--weight-400 typography--style-normal typography--color-text-default"
+      >
+        <span>
+           
+          MetaMask is a 
+          <a
+            class="button btn-link settings-page__inline-link"
+            href="https://metamask.zendesk.com/hc/en-us/articles/360059952212-MetaMask-is-a-non-custodial-wallet"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            non-custodial wallet
+          </a>
+          . That means 
+          <b>
+            you're the owner of your SRP.
+          </b>
+          
+           
+        </span>
+      </h6>
+    </div>
+    <div
+      class="box page-container__content box--flex-direction-row"
+    >
+      <div
+        class="box page-container__warning-container box--margin-4 box--flex-direction-row box--rounded-md box--border-style-solid box--border-color-error-default box--border-width-1"
+      >
+        <i
+          class="fa fa-eye-slash page-container__warning-icon"
+        />
+        <div
+          class="box page-container__warning-message box--flex-direction-row"
+        >
+          <h6
+            class="box box--margin-top-1 box--margin-bottom-1 box--flex-direction-row typography page-container__warning-title typography--h7 typography--weight-normal typography--style-normal typography--color-text-default"
+          >
+            Make sure no one is looking at your screen.
+          </h6>
+          <h6
+            class="box box--margin-top-1 box--margin-bottom-1 box--flex-direction-row typography typography--h7 typography--weight-bold typography--style-normal typography--color-text-default"
+          >
+            MetaMask Support will never request this.
+          </h6>
+        </div>
+      </div>
+      <div
+        class="box reveal-seed__content box--flex-direction-row"
+      >
+        <form>
+          <h6
+            class="box box--margin-top-1 box--margin-bottom-1 box--padding-bottom-3 box--flex-direction-row typography input-label typography--h6 typography--weight-bold typography--style-normal typography--color-text-default"
+          >
+            Enter password to continue
+          </h6>
+          <div
+            class="input-group"
+          >
+            <input
+              class="form-control"
+              data-testid="input-password"
+              id="password-box"
+              placeholder="Make sure nobody is looking"
+              type="password"
+              value=""
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <div
+      class="page-container__footer"
+    >
+      <footer>
+        <button
+          class="button btn--rounded btn-secondary btn--large page-container__footer-button"
+          role="button"
+          tabindex="0"
+        >
+          Cancel
+        </button>
+        <button
+          class="button btn--rounded btn-primary btn--large page-container__footer-button"
+          disabled=""
+          role="button"
+          tabindex="0"
+        >
+          Next
+        </button>
+      </footer>
+    </div>
+  </div>
+</div>
+`;
