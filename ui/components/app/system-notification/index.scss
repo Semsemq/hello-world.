@@ -1,0 +1,23 @@
+.system-notification {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  margin: 12px;
+  gap: 8px;
+  position: absolute;
+  bottom: 16px;
+
+  /* modal background */
+  background: rgba(58, 62, 66, 0.95);
+
+  /* modal drop shadow */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.214);
+  border-radius: 8px;
+
+  @include screen-sm-min {
+    max-width: 350px;
+    bottom: 10vh;
+  }
+}
