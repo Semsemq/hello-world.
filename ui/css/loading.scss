@@ -1,0 +1,68 @@
+#app-loader {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-duration: 0.5s;
+  animation-delay: 1s;
+
+  .metamask-loaded & {
+    display: none;
+  }
+
+  .loading-logo {
+    width: 10rem;
+    height: 10rem;
+    align-self: center;
+    margin: 10rem 0 0 0;
+  }
+
+  .loading-spinner {
+    width: 2rem;
+    height: 2rem;
+    align-self: center;
+    margin-top: 1rem;
+  }
+}
+
+#app-content {
+  visibility: hidden;
+
+  .metamask-loaded & {
+    animation: fadeIn 0.25s;
+    visibility: visible;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
