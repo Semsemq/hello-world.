@@ -1,0 +1,12 @@
+.configure-button {
+  &:hover {
+    & > * {
+      color: var(--color-primary-inverse);
+    }
+  }
+}
+
+.snap-detail-icon {
+  width: 32x;
+  height: 32px;
+}
