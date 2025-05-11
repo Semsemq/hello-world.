@@ -1,0 +1,37 @@
+name: Close stale PRs
+
+# For testing. Remove before merging
+on:
+  pull_request:
+    types: [assigned, opened, synchronize, reopened]
+
+# on:
+#   schedule:
+#     - cron: '0 0 * * *'  # This will run the action every day at 00:00
+
+jobs:
+  close_stale_prs:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+      pull-requests: write
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16'
+
+    - name: Install Yarn
+      run: npm install -g yarn
+
+    - name: Install dependencies
+      run: yarn
+
+    - name: Run stale PR closing script
+      run: npm run close-stale-prs
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
