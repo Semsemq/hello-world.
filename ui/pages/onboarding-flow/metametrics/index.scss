@@ -1,0 +1,39 @@
+.onboarding-metametrics {
+  @include screen-sm-min {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__grouping {
+    display: flex;
+
+    .mm-icon {
+      margin-top: 2px;
+    }
+
+    a {
+      color: var(--color-primary-default);
+    }
+  }
+
+  &__buttons {
+    margin-top: 24px;
+    width: 100%;
+
+    @include screen-sm-min {
+      margin-top: 40px;
+      justify-content: space-between;
+      display: flex;
+    }
+
+    button {
+      margin-bottom: 24px;
+
+      @include screen-sm-min {
+        width: 200px;
+      }
+    }
+  }
+}
