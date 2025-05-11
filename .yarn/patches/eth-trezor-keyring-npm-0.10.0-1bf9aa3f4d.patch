@@ -1,0 +1,87 @@
+diff --git a/index.js b/index.js
+index 9b76a29305d48cd36b3ffd3b17f5ecdc9be96d0d..4702df80a03e04abef23a8db997dc76a513da367 100644
+--- a/index.js
++++ b/index.js
+@@ -60,12 +60,27 @@ class TrezorKeyring extends EventEmitter {
+     this.paths = {};
+     this.deserialize(opts);
+ 
++    if(!opts.delayInit){
++      this.init();
++    }
++  }
++
++  async init(){
+     TrezorConnect.on('DEVICE_EVENT', (event) => {
+       if (event && event.payload && event.payload.features) {
+         this.model = event.payload.features.model;
+       }
+     });
+-    TrezorConnect.init({ manifest: TREZOR_CONNECT_MANIFEST });
++
++    try {
++      const res = await TrezorConnect.manifest(TREZOR_CONNECT_MANIFEST);
++   
++      console.log('TrezorConnect.init', res);
++   
++      return res;
++    } catch (e) {
++      console.error('Issued encountered setting manifest', e);
++    }
+   }
+ 
+   /**
+@@ -87,6 +102,10 @@ class TrezorKeyring extends EventEmitter {
+ 
+   serialize() {
+     return Promise.resolve({
++      hdk: this.isUnlocked() ? {
++        publicKey: this.hdk.publicKey.toString('hex'),
++        chainCode: this.hdk.chainCode.toString('hex'),
++      } : null,
+       hdPath: this.hdPath,
+       accounts: this.accounts,
+       page: this.page,
+@@ -97,19 +116,32 @@ class TrezorKeyring extends EventEmitter {
+   }
+ 
+   deserialize(opts = {}) {
++    if(opts.hdk){
++      this.setHdk(opts.hdk);
++    }
++
+     this.hdPath = opts.hdPath || hdPathString;
+     this.accounts = opts.accounts || [];
+     this.page = opts.page || 0;
++    this.paths = opts.paths || {};
+     this.perPage = opts.perPage || 5;
++    this.unlockedAccount = opts.unlockedAccount || 0;
++
+     return Promise.resolve();
+   }
+ 
++  setHdk ({ publicKey, chainCode }) {
++    this.hdk.publicKey = Buffer.from(publicKey, 'hex')
++    this.hdk.chainCode = Buffer.from(chainCode, 'hex')
++  }
++
+   isUnlocked() {
+     return Boolean(this.hdk && this.hdk.publicKey);
+   }
+ 
+   unlock() {
+     if (this.isUnlocked()) {
++      console.log('TrezorKeyring - Trezor is already unlocked');
+       return Promise.resolve('already unlocked');
+     }
+     return new Promise((resolve, reject) => {
+@@ -119,8 +151,7 @@ class TrezorKeyring extends EventEmitter {
+       })
+         .then((response) => {
+           if (response.success) {
+-            this.hdk.publicKey = Buffer.from(response.payload.publicKey, 'hex');
+-            this.hdk.chainCode = Buffer.from(response.payload.chainCode, 'hex');
++            this.setHdk(response.payload);
+             resolve('just unlocked');
+           } else {
+             reject(
