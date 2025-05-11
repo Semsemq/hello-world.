@@ -1,0 +1,117 @@
+import { isEqual } from 'lodash';
+import { useState, useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getNfts, getTokens } from '../ducks/metamask/metamask';
+import { getAssetDetails } from '../helpers/utils/token-util';
+import { hideLoadingIndication, showLoadingIndication } from '../store/actions';
+import { isEqualCaseInsensitive } from '../../shared/modules/string-utils';
+import * as util from '../helpers/utils/util';
+import { usePrevious } from './usePrevious';
+import { useTokenTracker } from './useTokenTracker';
+
+export function useAssetDetails(tokenAddress, userAddress, transactionData) {
+  const dispatch = useDispatch();
+  // state selectors
+  const nfts = useSelector(getNfts);
+  const tokens = useSelector(getTokens, isEqual);
+  const currentToken = tokens.find((token) =>
+    isEqualCaseInsensitive(token.address, tokenAddress),
+  );
+
+  // in-hook state
+  const [currentAsset, setCurrentAsset] = useState(null);
+  const { tokensWithBalances } = useTokenTracker(
+    currentToken ? [currentToken] : [],
+  );
+
+  // previous state checkers
+  const prevTokenAddress = usePrevious(tokenAddress);
+  const prevUserAddress = usePrevious(userAddress);
+  const prevTransactionData = usePrevious(transactionData);
+  const prevTokenBalance = usePrevious(tokensWithBalances);
+
+  useEffect(() => {
+    async function getAndSetAssetDetails() {
+      dispatch(showLoadingIndication());
+      let assetDetails = await getAssetDetails(
+        tokenAddress,
+        userAddress,
+        transactionData,
+        nfts,
+      );
+      const token = util.getContractAtAddress(tokenAddress);
+
+      const [name, symbol] = await Promise.allSettled([
+        await token.name(),
+        await token.symbol(),
+      ]);
+
+      if (!assetDetails.symbol) {
+        if (name.status === 'fulfilled') {
+          assetDetails = {
+            ...assetDetails,
+            name: name.value[0],
+          };
+        }
+
+        if (symbol.status === 'fulfilled') {
+          assetDetails = {
+            ...assetDetails,
+            symbol: symbol.value[0],
+          };
+        }
+      }
+
+      setCurrentAsset(assetDetails);
+      dispatch(hideLoadingIndication());
+    }
+    if (
+      tokenAddress !== prevTokenAddress ||
+      userAddress !== prevUserAddress ||
+      transactionData !== prevTransactionData ||
+      (prevTokenBalance && prevTokenBalance !== tokensWithBalances)
+    ) {
+      getAndSetAssetDetails();
+    }
+  }, [
+    dispatch,
+    prevTokenAddress,
+    prevTransactionData,
+    prevUserAddress,
+    tokenAddress,
+    userAddress,
+    transactionData,
+    nfts,
+    tokensWithBalances,
+    prevTokenBalance,
+  ]);
+
+  if (currentAsset) {
+    const {
+      standard,
+      symbol,
+      image,
+      name,
+      balance,
+      tokenId,
+      toAddress,
+      tokenAmount,
+      decimals,
+    } = currentAsset;
+
+    return {
+      toAddress,
+      tokenId,
+      decimals,
+      tokenAmount,
+      assetAddress: tokenAddress,
+      assetStandard: standard,
+      tokenSymbol: symbol ?? '',
+      tokenImage: image,
+      userBalance: balance,
+      assetName: name,
+    };
+  }
+
+  return {};
+}
