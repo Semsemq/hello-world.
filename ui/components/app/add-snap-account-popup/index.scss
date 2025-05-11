@@ -1,0 +1,9 @@
+.popover-wrap.add-snap-account-popup {
+  @include screen-sm-min {
+    width: 360px;
+  }
+}
+
+.box.popover-footer {
+  border-top: none;
+}
