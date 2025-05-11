@@ -1,0 +1,38 @@
+.menu-bar {
+  display: grid;
+  grid-template-columns: 30% minmax(30%, 1fr) 30%;
+  column-gap: 5px;
+  padding: 0 8px;
+  border-bottom: 1px solid var(--color-border-muted);
+  height: 64px;
+
+  &__buttons-container {
+    place-self: center end;
+
+    &__privacy-mode {
+      background: transparent;
+      padding: 0;
+      margin-right: 10px;
+    }
+
+    &__account-options {
+      background: none;
+      font-size: inherit;
+      padding: 0 8px 0 5px;
+      color: var(--color-text-default);
+    }
+  }
+
+  .selected-account {
+    grid-column: 2 / span 1;
+    place-self: center stretch;
+  }
+}
+
+.account-options-menu {
+  &__explorer-origin {
+    @include H7;
+
+    color: var(--color-text-alternative);
+  }
+}

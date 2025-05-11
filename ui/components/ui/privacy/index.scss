@@ -1,0 +1,14 @@
+.privacy {
+  filter: blur(8px);
+  background: var(--brand-colors-blue-blue100);
+
+  /* Hide images such as NFTs */
+  img {
+    visibility: hidden;
+  }
+
+  /* prevent double-blur if nested Privacy components */
+  .privacy {
+    filter: blur(0);
+  }
+}
