@@ -1,0 +1,49 @@
+.signature-request-message {
+  flex: 1 60%;
+  max-height: 231px;
+  position: relative;
+
+  &__root {
+    flex: 1 100%;
+    overflow: auto;
+
+    @include screen-sm-min {
+      width: auto;
+    }
+  }
+
+  &__node {
+    &__value {
+      white-space: pre-line;
+      overflow: hidden;
+      word-wrap: break-word;
+
+      &__address {
+        [dir='rtl'] & {
+          /*rtl:ignore*/
+          direction: ltr;
+
+          /*rtl:ignore*/
+          text-align: right;
+
+          span {
+            display: block;
+
+            /*rtl:ignore*/
+            direction: rtl;
+          }
+        }
+      }
+    }
+  }
+
+  &__scroll-button {
+    position: absolute;
+    right: 28px;
+    bottom: 12px;
+    border-radius: 50%;
+    height: 24px;
+    width: 24px;
+    cursor: pointer;
+  }
+}
