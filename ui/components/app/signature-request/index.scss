@@ -1,0 +1,62 @@
+@import 'signature-request-footer/index';
+@import 'signature-request-header/index';
+@import 'signature-request-message/index';
+@import 'signature-request-data/index';
+
+.signature-request {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+  min-width: 0;
+
+  @include screen-sm-min {
+    flex: initial;
+  }
+}
+
+.signature-request-header {
+  flex: 1;
+
+  .network-display {
+    justify-content: flex-end;
+    margin-left: auto;
+  }
+}
+
+.signature-request-content {
+  flex: 1 40%;
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 25px;
+  min-height: min-content;
+
+  &__title {
+    @include H5;
+
+    font-weight: 500;
+  }
+
+  &__info {
+    @include H7;
+
+    padding: 0 12px 4px;
+  }
+
+  &__info--bolded {
+    @include Paragraph;
+
+    font-weight: 500;
+  }
+
+  p {
+    @include H6;
+
+    color: var(--color-text-muted);
+  }
+}
+
+a.signature-request-content__verify-contract-details {
+  padding: 0;
+}
