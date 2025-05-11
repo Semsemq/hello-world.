@@ -1,0 +1,7 @@
+$theme-spacing-value: 4px;
+
+@function get-spacing($spacing) {
+  $spacing-in-px: $spacing * 4px;
+
+  @return $spacing-in-px;
+}

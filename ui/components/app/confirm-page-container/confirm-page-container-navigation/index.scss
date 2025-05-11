@@ -1,0 +1,50 @@
+.confirm-page-container-navigation {
+  display: flex;
+  justify-content: space-between;
+  font: inherit;
+  padding: 4px 10px;
+  border-bottom: 1px solid var(--color-border-muted);
+  flex: 0 0 auto;
+
+  &__container {
+    display: flex;
+  }
+
+  &__arrow {
+    cursor: pointer;
+    display: flex;
+    padding-left: 4px;
+    padding-right: 4px;
+    background: none;
+    border: none;
+    color: var(--color-icon-default);
+  }
+
+  &__arrow:hover {
+    transform: scale(1.1);
+  }
+
+  &__arrow:active {
+    transform: scale(0.95);
+  }
+
+  &__textcontainer {
+    text-align: center;
+  }
+
+  &__navtext {
+    @include h9;
+
+    font-weight: bold;
+  }
+
+  &__longtext {
+    @include h9;
+
+    color: var(--color-text-alternative);
+  }
+
+  &__imageflip {
+    transform: scaleX(-1);
+  }
+}
