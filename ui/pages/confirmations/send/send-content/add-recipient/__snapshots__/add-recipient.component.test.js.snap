@@ -1,0 +1,1421 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Add Recipient Component Domain Resolution should match snapshot 1`] = `
+<div>
+  <div
+    class="box send__select-recipient-wrapper box--flex-direction-row"
+  >
+    <div
+      class="box box--margin-top-2 box--margin-right-4 box--margin-bottom-2 box--margin-left-4 box--flex-direction-row"
+    >
+      <p
+        class="mm-box mm-text mm-text--body-lg-medium mm-box--color-text-alternative"
+      >
+        Your accounts
+      </p>
+    </div>
+    <div
+      class="send__select-recipient-wrapper__list"
+    >
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(250, 62, 0);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#238FE1"
+                  height="24"
+                  transform="translate(-3.1688370322504693 3.7148659319211887) rotate(161.9 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#FB1891"
+                  height="24"
+                  transform="translate(-3.3193719785441727 9.721703780663336) rotate(224.3 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F90901"
+                  height="24"
+                  transform="translate(-20.124965023528116 -11.47380216741897) rotate(344.7 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            T
+            e
+            s
+            t
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+             
+            4
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-10"
+                class=""
+                data-original-title="0xca8f1F0245530118D0cf14a06b01Daf8f76Cf281"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xca8f1...Cf281
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(250, 58, 0);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#18CDF2"
+                  height="24"
+                  transform="translate(-0.786295127845455 -2.478213052095374) rotate(328.9 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#035E56"
+                  height="24"
+                  transform="translate(-13.723846281624033 7.94434640381145) rotate(176.2 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F26602"
+                  height="24"
+                  transform="translate(12.500881513667943 -10.653854792247811) rotate(468.9 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            T
+            e
+            s
+            t
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-11"
+                class=""
+                data-original-title="0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0x0dcd5...3e7bc
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(245, 143, 0);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#018E74"
+                  height="24"
+                  transform="translate(4.7349359116752 -4.0712104893809595) rotate(358.4 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#18CAF2"
+                  height="24"
+                  transform="translate(5.764211673767176 -9.103779985257862) rotate(414.8 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#C81474"
+                  height="24"
+                  transform="translate(-4.206681561377365 -18.81083347367672) rotate(322.3 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            T
+            e
+            s
+            t
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+             
+            2
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-12"
+                class=""
+                data-original-title="0xec1adf982415d2ef5ec55899b9bfb8bc0f29251b"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xec1ad...9251b
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(242, 206, 2);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#2340E1"
+                  height="24"
+                  transform="translate(-1.4618178351124518 -0.7660988339149738) rotate(257.0 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#016D8E"
+                  height="24"
+                  transform="translate(9.611608452506482 2.2822102833604974) rotate(77.0 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F5F500"
+                  height="24"
+                  transform="translate(9.845704183619105 -16.68550159951908) rotate(465.0 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            T
+            e
+            s
+            t
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+             
+            3
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-13"
+                class=""
+                data-original-title="0xeb9e64b93097bc15f01f13eae97015c57ab64823"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xeb9e6...64823
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(249, 100, 1);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#C81432"
+                  height="24"
+                  transform="translate(-0.437734499550198 -2.3279673774420457) rotate(331.7 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#187AF2"
+                  height="24"
+                  transform="translate(-9.538226676234487 4.7487559567788775) rotate(160.5 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#FB183E"
+                  height="24"
+                  transform="translate(21.501064667516403 -2.238176776691073) rotate(517.6 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            L
+            e
+            d
+            g
+            e
+            r
+             
+            H
+            a
+            r
+            d
+            w
+            a
+            r
+            e
+             
+            2
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-14"
+                class=""
+                data-original-title="0xc42edfcc21ed14dda456aa0756c153f7985d8813"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xc42ed...d8813
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(24, 125, 242);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#C81435"
+                  height="24"
+                  transform="translate(-1.589489799558772 -1.4142407553635543) rotate(249.5 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F5E400"
+                  height="24"
+                  transform="translate(-1.1349713955737797 9.004718524184188) rotate(269.5 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F96001"
+                  height="24"
+                  transform="translate(5.683570561176149 18.620938111015967) rotate(216.3 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            S
+            n
+            a
+            p
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+             
+            <span>
+              <div
+                aria-describedby="tippy-tooltip-15"
+                class=""
+                data-original-title="'1' is similar to 'l'."
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                <span
+                  class="confusable__point"
+                >
+                  1
+                </span>
+              </div>
+            </span>
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-16"
+                class=""
+                data-original-title="0xb552685e3d2790efd64a175b00d51f02cdafee5d"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xb5526...fee5d
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div
+      class="send__select-recipient-wrapper__group-item"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="identicon"
+          style="height: 28px; width: 28px; border-radius: 14px;"
+        >
+          <div
+            style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 28px; height: 28px; display: inline-block; background: rgb(24, 151, 242);"
+          >
+            <svg
+              height="28"
+              width="28"
+              x="0"
+              y="0"
+            >
+              <rect
+                fill="#2362E1"
+                height="28"
+                transform="translate(3.140663911693453 -4.667521795329333) rotate(458.4 14 14)"
+                width="28"
+                x="0"
+                y="0"
+              />
+              <rect
+                fill="#F94301"
+                height="28"
+                transform="translate(-13.443026878443934 6.993307681050803) rotate(268.8 14 14)"
+                width="28"
+                x="0"
+                y="0"
+              />
+              <rect
+                fill="#FA7900"
+                height="28"
+                transform="translate(-7.941722319388745 25.795013895597954) rotate(117.3 14 14)"
+                width="28"
+                x="0"
+                y="0"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="send__select-recipient-wrapper__group-item__content"
+      >
+        <div
+          class="send__select-recipient-wrapper__group-item__title"
+        >
+          DNS Re...tion
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Add Recipient Component Own Account Recipient Search should match snapshot 1`] = `
+<div>
+  <div
+    class="box send__select-recipient-wrapper box--flex-direction-row"
+  >
+    <div
+      class="send__select-recipient-wrapper__list"
+    >
+      <div
+        class="send__select-recipient-wrapper__list"
+      >
+        <div
+          class="send__select-recipient-wrapper__recent-group-wrapper"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Add Recipient Component Send State should match snapshot 1`] = `
+<div>
+  <div
+    class="box send__select-recipient-wrapper box--flex-direction-row"
+  >
+    <div
+      class="send__select-recipient-wrapper__group-item"
+    >
+      <div
+        class=""
+      >
+        <div
+          class="identicon"
+          style="height: 28px; width: 28px; border-radius: 14px;"
+        >
+          <div
+            style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 28px; height: 28px; display: inline-block; background: rgb(245, 143, 0);"
+          >
+            <svg
+              height="28"
+              width="28"
+              x="0"
+              y="0"
+            >
+              <rect
+                fill="#018E74"
+                height="28"
+                transform="translate(5.524091896954402 -4.749745570944453) rotate(358.4 14 14)"
+                width="28"
+                x="0"
+                y="0"
+              />
+              <rect
+                fill="#18CAF2"
+                height="28"
+                transform="translate(6.724913619395038 -10.621076649467508) rotate(414.8 14 14)"
+                width="28"
+                x="0"
+                y="0"
+              />
+              <rect
+                fill="#C81474"
+                height="28"
+                transform="translate(-4.907795154940259 -21.945972385956175) rotate(322.3 14 14)"
+                width="28"
+                x="0"
+                y="0"
+              />
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div
+        class="send__select-recipient-wrapper__group-item__content"
+      >
+        <div
+          class="send__select-recipient-wrapper__group-item__title"
+        >
+          A
+          c
+          c
+          o
+          u
+          n
+          t
+           
+          2
+        </div>
+        <div
+          class="send__select-recipient-wrapper__group-item__subtitle"
+        >
+          0xec1a...251b
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Add Recipient Component render should match snapshot 1`] = `
+<div>
+  <div
+    class="box send__select-recipient-wrapper box--flex-direction-row"
+  >
+    <div
+      class="box box--margin-top-2 box--margin-right-4 box--margin-bottom-2 box--margin-left-4 box--flex-direction-row"
+    >
+      <p
+        class="mm-box mm-text mm-text--body-lg-medium mm-box--color-text-alternative"
+      >
+        Your accounts
+      </p>
+    </div>
+    <div
+      class="send__select-recipient-wrapper__list"
+    >
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(250, 62, 0);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#238FE1"
+                  height="24"
+                  transform="translate(-3.1688370322504693 3.7148659319211887) rotate(161.9 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#FB1891"
+                  height="24"
+                  transform="translate(-3.3193719785441727 9.721703780663336) rotate(224.3 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F90901"
+                  height="24"
+                  transform="translate(-20.124965023528116 -11.47380216741897) rotate(344.7 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            T
+            e
+            s
+            t
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+             
+            4
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-1"
+                class=""
+                data-original-title="0xca8f1F0245530118D0cf14a06b01Daf8f76Cf281"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xca8f1...Cf281
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(250, 58, 0);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#18CDF2"
+                  height="24"
+                  transform="translate(-0.786295127845455 -2.478213052095374) rotate(328.9 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#035E56"
+                  height="24"
+                  transform="translate(-13.723846281624033 7.94434640381145) rotate(176.2 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F26602"
+                  height="24"
+                  transform="translate(12.500881513667943 -10.653854792247811) rotate(468.9 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            T
+            e
+            s
+            t
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-2"
+                class=""
+                data-original-title="0x0dcd5d886577d5081b0c52e242ef29e70be3e7bc"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0x0dcd5...3e7bc
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(245, 143, 0);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#018E74"
+                  height="24"
+                  transform="translate(4.7349359116752 -4.0712104893809595) rotate(358.4 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#18CAF2"
+                  height="24"
+                  transform="translate(5.764211673767176 -9.103779985257862) rotate(414.8 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#C81474"
+                  height="24"
+                  transform="translate(-4.206681561377365 -18.81083347367672) rotate(322.3 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            T
+            e
+            s
+            t
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+             
+            2
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-3"
+                class=""
+                data-original-title="0xec1adf982415d2ef5ec55899b9bfb8bc0f29251b"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xec1ad...9251b
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(242, 206, 2);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#2340E1"
+                  height="24"
+                  transform="translate(-1.4618178351124518 -0.7660988339149738) rotate(257.0 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#016D8E"
+                  height="24"
+                  transform="translate(9.611608452506482 2.2822102833604974) rotate(77.0 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F5F500"
+                  height="24"
+                  transform="translate(9.845704183619105 -16.68550159951908) rotate(465.0 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            T
+            e
+            s
+            t
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+             
+            3
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-4"
+                class=""
+                data-original-title="0xeb9e64b93097bc15f01f13eae97015c57ab64823"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xeb9e6...64823
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(249, 100, 1);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#C81432"
+                  height="24"
+                  transform="translate(-0.437734499550198 -2.3279673774420457) rotate(331.7 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#187AF2"
+                  height="24"
+                  transform="translate(-9.538226676234487 4.7487559567788775) rotate(160.5 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#FB183E"
+                  height="24"
+                  transform="translate(21.501064667516403 -2.238176776691073) rotate(517.6 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            L
+            e
+            d
+            g
+            e
+            r
+             
+            H
+            a
+            r
+            d
+            w
+            a
+            r
+            e
+             
+            2
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-5"
+                class=""
+                data-original-title="0xc42edfcc21ed14dda456aa0756c153f7985d8813"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xc42ed...d8813
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+      <button
+        class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+      >
+        <div
+          class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+        >
+          <div
+            class="mm-avatar-account__jazzicon"
+          >
+            <div
+              style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(24, 125, 242);"
+            >
+              <svg
+                height="24"
+                width="24"
+                x="0"
+                y="0"
+              >
+                <rect
+                  fill="#C81435"
+                  height="24"
+                  transform="translate(-1.589489799558772 -1.4142407553635543) rotate(249.5 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F5E400"
+                  height="24"
+                  transform="translate(-1.1349713955737797 9.004718524184188) rotate(269.5 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+                <rect
+                  fill="#F96001"
+                  height="24"
+                  transform="translate(5.683570561176149 18.620938111015967) rotate(216.3 12 12)"
+                  width="24"
+                  x="0"
+                  y="0"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+        <div
+          class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+          style="overflow: hidden;"
+        >
+          <p
+            class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+            data-testid="address-list-item-label"
+          >
+            S
+            n
+            a
+            p
+             
+            A
+            c
+            c
+            o
+            u
+            n
+            t
+             
+            <span>
+              <div
+                aria-describedby="tippy-tooltip-6"
+                class=""
+                data-original-title="'1' is similar to 'l'."
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                <span
+                  class="confusable__point"
+                >
+                  1
+                </span>
+              </div>
+            </span>
+          </p>
+          <div
+            class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+            data-testid="address-list-item-address"
+          >
+            <div>
+              <div
+                aria-describedby="tippy-tooltip-7"
+                class=""
+                data-original-title="0xb552685e3d2790efd64a175b00d51f02cdafee5d"
+                data-tooltipped=""
+                style="display: inline;"
+                tabindex="0"
+              >
+                0xb5526...fee5d
+              </div>
+            </div>
+          </div>
+        </div>
+      </button>
+    </div>
+    <div
+      class="send__select-recipient-wrapper__list"
+    >
+      <div
+        class="box box--margin-top-2 box--margin-right-4 box--margin-bottom-2 box--margin-left-4 box--flex-direction-row"
+      >
+        <p
+          class="mm-box mm-text mm-text--body-lg-medium mm-box--color-text-alternative"
+        >
+          Contacts
+        </p>
+      </div>
+      <div
+        class="send__select-recipient-wrapper__list"
+      >
+        <div
+          class="send__select-recipient-wrapper__recent-group-wrapper"
+        />
+        <button
+          class="mm-box address-list-item mm-box--padding-4 mm-box--display-flex mm-box--align-items-center mm-box--width-full mm-box--background-color-transparent"
+        >
+          <div
+            class="mm-box mm-text mm-avatar-base mm-avatar-base--size-sm mm-avatar-account mm-text--body-sm mm-text--text-transform-uppercase mm-box--margin-inline-end-2 mm-box--display-flex mm-box--justify-content-center mm-box--align-items-center mm-box--color-text-default mm-box--background-color-background-alternative mm-box--rounded-full mm-box--border-color-transparent box--border-style-solid box--border-width-1"
+          >
+            <div
+              class="mm-avatar-account__jazzicon"
+            >
+              <div
+                style="border-radius: 50px; overflow: hidden; padding: 0px; margin: 0px; width: 24px; height: 24px; display: inline-block; background: rgb(249, 100, 1);"
+              >
+                <svg
+                  height="24"
+                  width="24"
+                  x="0"
+                  y="0"
+                >
+                  <rect
+                    fill="#C81432"
+                    height="24"
+                    transform="translate(-0.437734499550198 -2.3279673774420457) rotate(331.7 12 12)"
+                    width="24"
+                    x="0"
+                    y="0"
+                  />
+                  <rect
+                    fill="#187AF2"
+                    height="24"
+                    transform="translate(-9.538226676234487 4.7487559567788775) rotate(160.5 12 12)"
+                    width="24"
+                    x="0"
+                    y="0"
+                  />
+                  <rect
+                    fill="#FB183E"
+                    height="24"
+                    transform="translate(21.501064667516403 -2.238176776691073) rotate(517.6 12 12)"
+                    width="24"
+                    x="0"
+                    y="0"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div
+            class="mm-box mm-box--display-flex mm-box--flex-direction-column"
+            style="overflow: hidden;"
+          >
+            <p
+              class="mm-box mm-text address-list-item__label mm-text--body-md-medium mm-text--text-align-left mm-box--padding-0 mm-box--width-full mm-box--color-text-default"
+              data-testid="address-list-item-label"
+            >
+              A
+              d
+              d
+              r
+              e
+              s
+              s
+               
+              B
+              o
+              o
+              k
+               
+              A
+              c
+              c
+              o
+              u
+              n
+              t
+               
+              <span>
+                <div
+                  aria-describedby="tippy-tooltip-8"
+                  class=""
+                  data-original-title="'1' is similar to 'l'."
+                  data-tooltipped=""
+                  style="display: inline;"
+                  tabindex="0"
+                >
+                  <span
+                    class="confusable__point"
+                  >
+                    1
+                  </span>
+                </div>
+              </span>
+            </p>
+            <div
+              class="mm-box mm-text mm-text--body-sm mm-text--ellipsis mm-box--color-text-alternative"
+              data-testid="address-list-item-address"
+            >
+              <div>
+                <div
+                  aria-describedby="tippy-tooltip-9"
+                  class=""
+                  data-original-title="0xc42edfcc21ed14dda456aa0756c153f7985d8813"
+                  data-tooltipped=""
+                  style="display: inline;"
+                  tabindex="0"
+                >
+                  0xc42ed...d8813
+                </div>
+              </div>
+            </div>
+          </div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+`;
