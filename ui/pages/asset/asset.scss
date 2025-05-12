@@ -1,0 +1,76 @@
+.asset {
+  &__container {
+    background-color: var(--color-background-default);
+  }
+
+  &__overview {
+    box-shadow: var(--shadow-size-xs) var(--color-shadow-default);
+  }
+
+  &__wrapper {
+    @media screen and (max-width: $screen-sm-max) {
+      width: 100%;
+    }
+  }
+}
+
+.asset-navigation {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  height: 64px;
+}
+
+.asset-breadcrumb {
+  @include H6;
+
+  color: var(--color-text-default);
+  background-color: inherit;
+
+  &__asset {
+    font-weight: bold;
+  }
+}
+
+.time-range-button {
+  height: 24px;
+
+  &:hover {
+    background-color: var(--color-background-default-hover) !important;
+    color: var(--color-text-alternative) !important;
+    box-shadow: var(--shadow-size-xs) var(--color-shadow-default) !important;
+  }
+
+  &:active {
+    border-color: transparent;
+  }
+
+  &:focus {
+    background-color: var(--color-background-default);
+    color: var(--color-text-alternative) !important;
+  }
+
+  &__selected {
+    background-color: var(--color-background-default-pressed) !important;;
+  }
+}
+
+.asset-header {
+  min-height: 70px;
+  z-index: 55;
+  box-shadow: var(--shadow-size-md) var(--color-shadow-default);
+}
+
+.asset-tooltip {
+  width: 100%;
+}
+
+.asset-footer {
+  position: sticky;
+  z-index: 55;
+  bottom: 0;
+  box-shadow: 0 0 15px 0 var(--color-shadow-default);
+}
+
+.chart-up { stroke: var(--color-success-default); }
+.chart-down { stroke: var(--color-error-default); }
